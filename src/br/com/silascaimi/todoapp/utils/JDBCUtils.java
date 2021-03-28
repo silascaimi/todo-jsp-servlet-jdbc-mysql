@@ -1,10 +1,10 @@
 package br.com.silascaimi.todoapp.utils;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.time.LocalDate;
-import java.sql.Date;
 
 public class JDBCUtils {
 
@@ -43,5 +43,9 @@ public class JDBCUtils {
 
 	public static Date getSQLDate(LocalDate date) {
 		return java.sql.Date.valueOf(date);
+	}
+
+	public static LocalDate getUtilData(Date sqlDate) {
+		return sqlDate.toLocalDate();
 	}
 }
