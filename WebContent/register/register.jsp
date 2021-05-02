@@ -14,9 +14,9 @@
 
 		<h2>User Register Form</h2>
 		<div class="">
-<!-- 			<div class="alert alert-success center" role="alert"> -->
-<%-- 				<p>${NOTIFICATION}</p> --%>
-<!-- 			</div> -->
+			<div class="alert alert-success center" role="alert">
+				<p>${NOTIFICATION}</p>
+			</div>
 
 			<form action="<%=request.getContextPath()%>/register" method="POST">
 
