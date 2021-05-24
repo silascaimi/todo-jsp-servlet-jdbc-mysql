@@ -21,6 +21,8 @@ public class UserDao {
 			preparedStatement.setString(2, employee.getLastName());
 			preparedStatement.setString(3, employee.getUsername());
 			preparedStatement.setString(4, employee.getPassword());
+			
+			result = preparedStatement.executeUpdate();
 
 		} catch (SQLException e) {
 			JDBCUtils.printSQLException(e);

@@ -13,7 +13,7 @@ public class LoginDao {
 	public boolean validate(LoginBean loginBean) {
 
 		boolean status = false;
-		String CONSULTA_USER_PASSWORD_SQL = "select * from users where name = ? and password = ?";
+		String CONSULTA_USER_PASSWORD_SQL = "select * from users where username = ? and password = ?";
 
 		try (Connection connection = JDBCUtils.getConnection();
 				PreparedStatement preparedStatement = connection.prepareStatement(CONSULTA_USER_PASSWORD_SQL);) {

@@ -9,11 +9,11 @@
 </head>
 <body>
 	<jsp:include page="../common/header.jsp"></jsp:include>
-	
+
 	<div class="container col-md-6 col-md-offset-3">
 
 		<h2>User Register Form</h2>
-		<div class="">
+		<div class="col-md-6 col-md-offset-3">
 			<div class="alert alert-success center" role="alert">
 				<p>${NOTIFICATION}</p>
 			</div>
